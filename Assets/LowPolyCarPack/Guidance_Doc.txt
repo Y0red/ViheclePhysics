@@ -1,0 +1,42 @@
+
+Guidance Doc on Low Poly Car Pack Usage
+
+I wanted to give a few insights from the development standpoint.
+
+These vehicles each have (3) LODs. The highest LOD will be the vehicles without an LOD suffix
+appended to their names. These will be your "garage" and first person driveable vehicles.
+
+The LOD1 and LOD2 vehicles are designed to be AI or traffic vehicles. If you're not sure how LODs work,
+basically a model will swap out to a lower resolution version based on a certain distance from the camera.
+You would never use the LOD1 or LOD2 vehicles as driveable vehicles in most circumstances.
+Exceptions I can think of are possibly orthographic camera based games where the player is already offset
+a good distance from the camera.
+
+If you are using Unity Pro, LOD Groups are the go to method for using and setting up LODs in your racing games.
+
+If you are using a free license of Unity there are also solutions.
+There are several LOD solutions that cost about $15 on the Asset Store. These are solutions that will work in the free license.
+
+UniLOD is a well know free for commercial use solution as well.
+
+http://forum.unity3d.com/threads/42524-UniLOD-BETA-Level-of-detail-and-streaming-support-UPDATE
+
+If you are a bit of a programmer yourself it actually wouldn't be very hard to set up a simple script
+to swap meshes based on the camera's distance from a certain mesh.
+
+Your own game projects will use a specific scale set for your game. I've used real world meters and use an FBX import scale of 1.0 in Unity.
+I've found sticking as close to real world scale as possible helps with smooth physics.
+
+I've included a single Unity Package file for Unity users, that will allow a one button import of all models, textures, materials, etc.
+
+I've also included the source Maya .MB files, OBJ files and FBX files. These will allow you all to import them into just about any game engine imagineable.
+
+The textures are in PSD format to allow for simple editing to customize these cars to your liking. Currently the car color (paint) is a single layer near
+the bottom of the PSD called Base Paint Layer. It uses a Color Overlay layer style to "color" that layer. 
+
+
+
+
+
+
+
